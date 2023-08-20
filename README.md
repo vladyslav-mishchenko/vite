@@ -1,0 +1,6 @@
+- html partials
+- images
+- fonts
+- scss
+- post css (autoprefixer)
+- js
