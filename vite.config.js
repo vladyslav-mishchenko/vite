@@ -12,7 +12,8 @@ export default defineConfig({
 
         server: {
             port: 7777,
-            open: "index.html",
+            host: true,
+            // open: "index.html"
         },
 
         preview:{
