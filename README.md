@@ -2,5 +2,6 @@
 - images
 - fonts
 - scss
-- post css (autoprefixer)
+- postcss autoprefixer
+- postcss postcss-sort-media-queries
 - js

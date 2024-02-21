@@ -1,37 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  
-  <body>
-    <div class="website">
-      {{> header }}
 
-      <div class="main">
-        <div class="slider">
-          <img src="./images/slider/slide-1.jpg" alt="">
-          <img src="./images/slider/slide-2.jpg" alt="">
-          <img src="./images/slider/slide-3.jpg" alt="">
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="{{resolve-from-root 'style.scss'}}" />
+</head>
 
-        <div class="posts">
-          <div class="post">
-            <h1>Hello Docker !</h1>            
-          </div>
-        </div>
+<body>
+  <div class="website">
+    {{> header }}
 
-        <div class="menu">
-          <div class=""></div>
-          <div class=""></div>
+    <div class="main">
+      <div class="slider">
+        <img src="./images/slider/slide-1.jpg" alt="">
+        <img src="./images/slider/slide-2.jpg" alt="">
+        <img src="./images/slider/slide-3.jpg" alt="">
+      </div>
+
+      <div class="posts">
+        <div class="post">
+          <h1>Hello Docker !</h1>
         </div>
       </div>
 
-      {{> footer }}
+      <div class="menu">
+        <div class=""></div>
+        <div class=""></div>
+      </div>
     </div>
-    
-    <script type="module" src="./main.js"></script>
-  </body>
+
+    {{> footer }}
+  </div>
+
+  <script type="module" src="{{resolve-from-root 'main.js'}}"></script>
+</body>
+
 </html>
