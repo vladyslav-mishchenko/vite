@@ -2,33 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <link rel="stylesheet" href="{{resolve-from-root 'style.scss'}}" />
+  {{> head}}
 </head>
 
-<body>
+<body class="body">
   <div class="website">
     {{> header }}
 
-    <div class="main">
-      <div class="slider">
-        <img src="./images/slider/slide-1.jpg" alt="">
-        <img src="./images/slider/slide-2.jpg" alt="">
-        <img src="./images/slider/slide-3.jpg" alt="">
-      </div>
+    <div class="content">
 
-      <div class="posts">
-        <div class="post">
-          <h1>Hello Docker !</h1>
-        </div>
-      </div>
-
-      <div class="menu">
-        <div class=""></div>
-        <div class=""></div>
-      </div>
     </div>
 
     {{> footer }}
