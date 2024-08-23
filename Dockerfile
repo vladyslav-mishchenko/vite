@@ -8,6 +8,8 @@ RUN apt-get update \
 
 COPY . .
 
+USER node
+
 EXPOSE 5173 7777 9999
 
 CMD ["node"]
