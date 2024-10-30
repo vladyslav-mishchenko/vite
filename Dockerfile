@@ -1,5 +1,7 @@
 FROM node:latest
 
+LABEL maintainer="Vladyslav Mishchenko <vmdevspace@gmail.com>"
+
 WORKDIR /app
 
 RUN apt-get update \
