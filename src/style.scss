@@ -1,33 +1,3 @@
-@import './scss/settings/variables';
-@import './scss/settings/breakpoints';
-@import './scss/settings/reset';
-
-@import './scss/fonts/fonts';
-@import './scss/fonts/icons';
-
-// base
-@import './scss/layout/base/base';
-@import './scss/layout/base/header';
-@import './scss/layout/base/content';
-@import './scss/layout/base/footer';
-
-// blocks
-@import './scss/layout/blocks/header/header';
-@import './scss/layout/blocks/footer/footer';
-
-// components
-@import './scss/layout/components/header/mobile-menu-btn';
-@import './scss/layout/components/header/main-menu';
-@import './scss/layout/components/footer/footer-menu';
-
-.test {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #333333;
-    color: #F5F5F5;
-
-    font-size: 12px;
-}
+@use './scss/fonts/fonts';
+@use './scss/settings/reset';
+@use './scss/layout/layout.scss';

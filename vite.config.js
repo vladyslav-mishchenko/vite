@@ -36,7 +36,6 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 home: resolve(root, 'index.html'),
-                contacts: resolve(root, 'contacts.html'),
             },
 
             output: {
