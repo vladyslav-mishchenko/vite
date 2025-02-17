@@ -5,3 +5,4 @@
 - postcss autoprefixer
 - postcss postcss-sort-media-queries
 - js
+- prettier
