@@ -8,6 +8,6 @@ services:
     image: vite:latest
     container_name: vite
     volumes:
-     - .:/app
+      - .:/app
     ports:
-     - '7777:7777'
+      - '7777:7777'
