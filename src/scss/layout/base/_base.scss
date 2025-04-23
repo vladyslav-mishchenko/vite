@@ -1,0 +1,86 @@
+@use '../../utils/variables' as v;
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: v.$body-bg;
+}
+
+.website {
+  min-height: 100vh;
+}
+
+.website {
+  margin: 0 auto;
+
+  min-width: 320px;
+  max-width: 1920px;
+
+  background: #19161b;
+
+  display: grid;
+
+  // header: fixed
+  // content: 1fr
+  // footer auto
+  grid-template-rows: 1fr auto;
+}
+
+.header {
+}
+
+.content {
+  padding-top: 25px;
+}
+
+.footer {
+}
+
+.g {
+  > .container {
+    margin: 0 auto;
+
+    // media-bp-only
+    // only xs
+    @media (max-width: 575.98px) {
+      max-width: none;
+    }
+
+    // only sm
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      max-width: none;
+    }
+
+    // only md
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      max-width: 720px;
+    }
+
+    // only lg
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      max-width: 960px;
+    }
+
+    // only xl
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+      max-width: 1140px;
+    }
+
+    // only xxl
+    @media (min-width: 1400px) {
+      max-width: 1320px;
+    }
+    // end media-bp-only
+  }
+}
