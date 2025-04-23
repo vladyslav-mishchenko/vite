@@ -2,19 +2,44 @@
 <html lang="en">
   <head>
     {{> head}}
+    <title>Home</title>
   </head>
-
-  <body class="body">
+  <body>
     <div class="website">
       {{> header}}
 
       <div class="content">
-        <i class="icons icon-linux"></i>
+        <div class="page-block g">
+          <div class="container">
+            <div class="post">
+              <div class="c1">
+                <img src="./images/post-1.jpg" alt="post-1" />
+              </div>
+              <div class="c2"></div>
+            </div>
+
+            <div class="post">
+              <div class="c1">
+                <img src="./images/post-2.jpg" alt="post-2" />
+              </div>
+              <div class="c2"></div>
+            </div>
+
+            <div class="post">
+              <div class="c1">
+                <img src="./images/post-3.jpg" alt="post-3" />
+              </div>
+              <div class="c2"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg">
+          <div class="overlay"></div>
+        </div>
       </div>
 
       {{> footer}}
     </div>
-
-    <script type="module" src="{{resolve-from-root 'main.js'}}"></script>
   </body>
 </html>

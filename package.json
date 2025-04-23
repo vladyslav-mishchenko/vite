@@ -1,31 +1,41 @@
 {
-    "name": "vite-project",
-    "private": true,
-    "version": "0.0.0",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview",
-        "format": "prettier . --write",
-        "icons": "fantasticon src/icons -o src/fonts/icons"
-    },
-    "browserslist": [
-        "cover 99.5%"
-    ],
-    "devDependencies": {
-        "autoprefixer": "^10.4.15",
-        "fantasticon": "^3.0.0",
-        "postcss": "^8.4.35",
-        "postcss-sort-media-queries": "^5.2.0",
-        "prettier": "3.5.1",
-        "sass": "^1.65.1",
-        "vite": "^4.4.5",
-        "vite-plugin-handlebars": "^2.0.0",
-        "vite-plugin-inspect": "^0.7.38"
-    },
-    "dependencies": {
-        "path": "^0.12.7",
-        "resolve": "^1.22.4"
-    }
+  "name": "vitejsbuilder",
+  "version": "1.0.0",
+  "description": "build frontend with vitejs",
+  "homepage": "https://github.com/vladyslav-mishchenko/vite#readme",
+  "bugs": {
+    "url": "https://github.com/vladyslav-mishchenko/vite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladyslav-mishchenko/vite.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prettier": "prettier . --write",
+    "icons": "fantasticon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "vite": "^6.3.2",
+    "vite-plugin-handlebars": "^1.5.0",
+    "sass": "^1.86.3",
+    "path": "^0.12.7",
+    "postcss": "^8.5.3",
+    "postcss-sort-media-queries": "^5.2.0",
+    "autoprefixer": "^10.4.21",
+    "browserslist": "^4.24.4",
+    "fantasticon": "^3.0.0",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^5.2.5",
+    "@fontsource/space-grotesk": "^5.2.6"
+  }
 }
