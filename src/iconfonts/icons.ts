@@ -1,7 +1,7 @@
-export type IconsId = 'socials-yt' | 'socials-in' | 'socials-fb';
+export type IconsId = 'socials-fb' | 'socials-in' | 'socials-yt';
 
-export const MY_CODEPOINTS: { [key in IconsId]: string } = {
-  'socials-yt': '61697',
+export const ICONS_CODEPOINTS: { [key in IconsId]: string } = {
+  'socials-fb': '61697',
   'socials-in': '61698',
-  'socials-fb': '61699',
+  'socials-yt': '61699',
 };

@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icons';
   src:
-    url('./icons.ttf?e10e5f331a87a91985a98c0ec2eba353') format('truetype'),
-    url('./icons.woff?e10e5f331a87a91985a98c0ec2eba353') format('woff'),
-    url('./icons.woff2?e10e5f331a87a91985a98c0ec2eba353') format('woff2');
+    url('./icons.ttf?337a64ead3edb50c730c37afde527aed') format('truetype'),
+    url('./icons.woff?337a64ead3edb50c730c37afde527aed') format('woff'),
+    url('./icons.woff2?337a64ead3edb50c730c37afde527aed') format('woff2');
 }
 
 i[class^='icon-']:before,
@@ -18,12 +18,12 @@ i[class*=' icon-']:before {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-socials-yt:before {
+.icon-socials-fb:before {
   content: '\f101';
 }
 .icon-socials-in:before {
   content: '\f102';
 }
-.icon-socials-fb:before {
+.icon-socials-yt:before {
   content: '\f103';
 }

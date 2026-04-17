@@ -1,3 +1,8 @@
+@use 'sass:map';
+
+@use '../../utils/breakpoints' as bp;
+@use '../../utils/breakpoints' as container;
+
 .header-fixed {
   position: fixed;
   top: 0;
@@ -5,9 +10,45 @@
   bottom: auto;
   left: 0;
 
+  z-index: 100;
+
+  // background: #19161b;
+  background-color: #2c2c2c70;
+
   > .container {
-    margin: 0 auto;
-    max-width: 1920px;
     min-width: 320px;
+    max-width: 1920px;
+
+    margin: 0 auto;
+  }
+}
+
+.header {
+  > .container {
+  }
+}
+
+.g-header {
+  height: 50px;
+
+  display: grid;
+  // grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+
+  > .logo-link {
+    font-family: f102;
+    font-size: 16px;
+    color: #ffb577;
+  }
+
+  > .languages {
+    justify-self: end;
+  }
+
+  > .menu {
+    justify-self: end;
+    display: none;
   }
 }

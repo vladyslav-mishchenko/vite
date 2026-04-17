@@ -1,13 +1,41 @@
-/* space-grotesk-latin-300-normal */
+@use './icons';
+
+/* Inter Regular Latin */
 @font-face {
-  font-family: 'f1';
+  font-family: 'f101';
+  src: url('@fontsource/inter/files/inter-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
-  font-weight: 300;
-  src:
-    url(@fontsource/space-grotesk/files/space-grotesk-latin-300-normal.woff2) format('woff2'),
-    url(@fontsource/space-grotesk/files/space-grotesk-latin-300-normal.woff) format('woff');
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
-    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF;
+}
+
+/* Inter Regular Cyrillic */
+@font-face {
+  font-family: 'f101';
+  src: url('@fontsource/inter/files/inter-cyrillic-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0400-04FF;
+}
+
+/* Overpass Regular Latin */
+@font-face {
+  font-family: 'f102';
+  src: url('@fontsource/overpass/files/overpass-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF; /* Latin */
+}
+
+/* Overpass Regular Cyrillic */
+@font-face {
+  font-family: 'f102';
+  src: url('@fontsource/overpass/files/overpass-cyrillic-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0400-04FF; /* Cyrillic */
 }

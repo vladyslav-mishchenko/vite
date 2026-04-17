@@ -1,20 +1,20 @@
-@use '../../utils/variables' as v;
+@use 'sass:map';
+
+@use '../../utils/breakpoints' as bp;
+@use '../../utils/breakpoints' as container;
+
+html {
+}
+
+body {
+  font-family: f101;
+  background: #19161b;
+  color: #717171;
+}
 
 html,
 body {
   min-height: 100vh;
-}
-
-html {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  background-color: v.$body-bg;
 }
 
 .website {
@@ -31,56 +31,89 @@ body {
 
   display: grid;
 
-  // header: fixed
+  // header: auto | fixed
   // content: 1fr
   // footer auto
   grid-template-rows: 1fr auto;
 }
 
-.header {
+.website {
+  > .content {
+    section {
+      margin: 100px 0;
+    }
+  }
 }
 
-.content {
-  padding-top: 25px;
-}
-
-.footer {
-}
-
+// adaptive container
 .g {
   > .container {
     margin: 0 auto;
+    padding: 0 16px;
 
-    // media-bp-only
     // only xs
-    @media (max-width: 575.98px) {
-      max-width: none;
-    }
+    // @include bp.only(xs) {
+    // }
+
+    // only xs-0
+    // @include bp.only(xs-0) {
+    // }
+
+    // only xs-320
+    // @include bp.only(xs-320) {
+    // }
+
+    // only xs-360
+    // @include bp.only(xs-360) {
+    // }
+
+    // only xs-375
+    // @include bp.only(xs-375) {
+    // }
+
+    // only xs-390
+    // @include bp.only(xs-390) {
+    // }
+
+    // only xs-410
+    // @include bp.only(xs-410) {
+    // }
+
+    // only xs-430
+    // @include bp.only(xs-430) {
+    // }
 
     // only sm
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      max-width: none;
+    @include bp.only(sm) {
+      max-width: container.max-width(sm);
     }
 
     // only md
-    @media (min-width: 768px) and (max-width: 991.98px) {
-      max-width: 720px;
+    @include bp.only(md) {
+      max-width: container.max-width(md);
     }
 
     // only lg
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-      max-width: 960px;
+    @include bp.only(lg) {
+      max-width: container.max-width(lg);
     }
 
     // only xl
-    @media (min-width: 1200px) and (max-width: 1399.98px) {
-      max-width: 1140px;
+    @include bp.only(xl) {
+      max-width: container.max-width(xl);
     }
 
     // only xxl
-    @media (min-width: 1400px) {
-      max-width: 1320px;
+    @include bp.only(xxl) {
+      max-width: container.max-width(xxl);
     }
-    // end media-bp-only
+
+    // up sm
+    @include bp.up(sm) {
+      padding: 0;
+    }
+  }
+
+  > .container-fluid {
   }
 }

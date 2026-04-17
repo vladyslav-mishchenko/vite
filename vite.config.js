@@ -4,6 +4,7 @@ import handlebars from 'vite-plugin-handlebars';
 
 const root = resolve(__dirname, 'src');
 const outDir = resolve(__dirname, 'dist');
+const assetsPath = 'static/assets';
 
 export default defineConfig({
   root,
@@ -29,26 +30,27 @@ export default defineConfig({
       input: {
         home: resolve(root, 'index.html'),
         about: resolve(root, 'about.html'),
+        contact: resolve(root, 'contact.html'),
       },
 
       output: {
-        chunkFileNames: 'assets/js/[name]-[hash].js',
-        entryFileNames: 'assets/js/[name]-[hash].js',
+        chunkFileNames: `${assetsPath}/js/[name]-[hash].js`,
+        entryFileNames: `${assetsPath}/js/[name]-[hash].js`,
 
         assetFileNames: ({ names }) => {
           if (/\.(gif|jpe?g|png|svg|webp)$/.test(names ?? '')) {
-            return 'assets/img/[name]-[hash][extname]';
+            return `${assetsPath}/img/[name]-[hash][extname]`;
           }
 
           if (/\.css$/.test(names ?? '')) {
-            return 'assets/css/[name]-[hash][extname]';
+            return `${assetsPath}/css/[name]-[hash][extname]`;
           }
 
           if (/\.(ttf|woff|woff2|eot)$/.test(names ?? '')) {
-            return 'assets/fonts/[name]-[hash][extname]';
+            return `${assetsPath}/fonts/[name]-[hash][extname]`;
           }
 
-          return 'assets/[name]-[hash][extname]';
+          return `${assetsPath}/[name] - [hash][extname]`;
         },
       },
     },

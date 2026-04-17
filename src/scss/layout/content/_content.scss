@@ -1,45 +1,32 @@
-.post {
-  margin: 25px 0;
+@use 'sass:map';
 
-  display: grid;
-  grid-template-columns: 250px 1fr;
+@use '../../utils/breakpoints' as bp;
 
-  > .c1 {
-    img {
-      display: block;
-      max-width: 100%;
-    }
+.content {
+  padding-top: 40px;
+
+  // // breakpoints
+  // // only sm
+  // @include bp.only(sm) {
+  // }
+
+  // // only md
+  // @include bp.only(md) {
+  // }
+
+  // only lg
+  @include bp.only(lg) {
+    padding-top: 45px;
   }
-}
 
-.bg {
-  width: auto;
-  height: 300px;
-  background-image: url('./img/bg.jpg');
-  background-size: cover;
-
-  position: relative;
-
-  > .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #000000d0;
+  // only xl
+  @include bp.only(xl) {
+    padding-top: 50px;
   }
-}
 
-.footer-socials {
-  margin: 0;
-  padding: 25px 0;
-  list-style-type: none;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-
-  .item {
+  // only xxl
+  @include bp.only(xxl) {
+    padding-top: 80px;
   }
+  // end breakpoints
 }

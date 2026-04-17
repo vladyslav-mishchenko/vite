@@ -1,0 +1,56 @@
+@use 'sass:map';
+
+@use '../../utils/breakpoints' as bp;
+
+.footer {
+}
+
+.g-footer {
+  min-height: 50px;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid #717171;
+
+  > .item {
+  }
+}
+
+.footer-copyright {
+  color: #717171;
+  font-size: 13px;
+
+  // breakpoints
+  // only xs
+
+  // // only sm
+  // @include bp.only(sm) {
+  // }
+
+  // // only md
+  // @include bp.only(md) {
+  // }
+
+  // // only lg
+  // @include bp.only(lg) {
+  // }
+
+  // // only xl
+  // @include bp.only(xl) {
+  // }
+
+  // // only xxl
+  // @include bp.only(xxl) {
+  // }
+
+  @include bp.down(md) {
+    font-size: 12px;
+  }
+  // end breakpoints
+
+  > .separator {
+    margin: 0 2px;
+  }
+}
