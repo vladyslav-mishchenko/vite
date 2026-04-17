@@ -1,8 +1,8 @@
-# Frontend Development Automation Tool
+# Frontend Development Toolkit with Vite, Docker and Make
 
 This project uses a `Makefile` to simplify Docker and npm development workflows.
 
-All commands are executed inside the Docker container: `vite-frontend`.
+All commands are executed inside the Docker container: `frontend-dev`.
 
 ---
 
@@ -64,7 +64,7 @@ This shows:
 
 ## Configuration
 
-- Container name: `vite-frontend`
+- Container name: `frontend-dev`
 - Docker Compose file: `compose/docker-compose.dev.yml`
 - All npm commands run inside Docker container using `docker exec`
 - Some commands require the container to be running
@@ -75,7 +75,7 @@ This shows:
 
 ```bash
 make upd       # start environment
-make install   # install dependencies
+make install   # install npm dependencies
 make dev       # start development server
 ```
 
