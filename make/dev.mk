@@ -13,7 +13,7 @@
 # VARIABLES
 # ==========================================
 
-CONTAINER_NAME := vite-frontend
+CONTAINER_NAME := frontend-dev
 COMPOSE_DEV := docker compose -f compose/docker-compose.dev.yml
 
 DOCKER_EXEC := docker exec -it $(CONTAINER_NAME)

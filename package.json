@@ -1,14 +1,14 @@
 {
-  "name": "vitejsbuilder",
-  "version": "1.0.0",
-  "description": "build frontend with vitejs",
-  "homepage": "https://github.com/vladyslav-mishchenko/vite#readme",
+  "name": "frontend-dev",
+  "version": "1.1.0",
+  "description": "frontend development automation",
+  "homepage": "https://github.com/vladyslav-mishchenko/frontend-dev-toolkit#readme",
   "bugs": {
-    "url": "https://github.com/vladyslav-mishchenko/vite/issues"
+    "url": "https://github.com/vladyslav-mishchenko/frontend-dev-toolkit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vladyslav-mishchenko/vite.git"
+    "url": "git+git@github.com:vladyslav-mishchenko/frontend-dev-toolkit.git"
   },
   "license": "ISC",
   "author": "",

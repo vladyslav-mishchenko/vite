@@ -56,6 +56,7 @@ make status  # Check project status (Docker, Node.js, npm versions)
 ```
 
 This shows:
+
 - Docker container status
 - Node.js version inside container
 - npm version inside container
