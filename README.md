@@ -1,4 +1,4 @@
-# Development Automation (Makefile)
+# Frontend Development Automation Tool
 
 This project uses a `Makefile` to simplify Docker and npm development workflows.
 
